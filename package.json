@@ -1,0 +1,17 @@
+{
+  "name": "TypeORM-Company",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "dependencies": {
+    "@nuxt/content": "^3.10.0",
+    "@nuxt/fonts": "^0.12.1",
+    "better-sqlite3": "^12.6.0",
+    "nuxt": "^4.2.2"
+  }
+}
