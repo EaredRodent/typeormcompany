@@ -42,11 +42,11 @@ const onOrderClick = () => {
     background-repeat: no-repeat;
     position: relative;
 
-    &::after {
+    &::before {
       content: "";
       position: absolute;
-      bottom: 0px;
-      left: 0px;
+      bottom: 0;
+      left: 0;
       height: 325px;
       width: 100%;
       background: linear-gradient(rgba(18, 24, 77, 0) 69.91%, rgb(0, 1, 36) 94.95%);
@@ -80,6 +80,7 @@ const onOrderClick = () => {
 
   .actions {
     padding-top: 5%;
+    z-index: 1;
   }
 
   .order-button {

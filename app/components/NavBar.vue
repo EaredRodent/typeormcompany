@@ -13,6 +13,13 @@ const onOrderClick = () => {
     block: 'center'
   })
 }
+
+const onTabClick = (id) => {
+  window[id].scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  })
+}
 </script>
 
 <template>
@@ -22,9 +29,9 @@ const onOrderClick = () => {
     TypeORM
   </div>
   <div class="nav-links">
-    <div>Выгода</div>
-    <div>Заявка</div>
-    <div>Контакты</div>
+    <div @click="onTabClick('facts')">Выгода</div>
+    <div @click="onTabClick('callUs')">Заявка</div>
+    <div @click="onTabClick('contacts')">Контакты</div>
   </div>
   <div class="send-order">
     <button type="submit" class="send-button" @click="onOrderClick">
@@ -45,6 +52,7 @@ const onOrderClick = () => {
   justify-content: space-between;
   align-items: center;
   padding: 3vh;
+  z-index: 2;
 
   &[show-background=true] {
     background-color: #000124;
@@ -71,6 +79,14 @@ const onOrderClick = () => {
 
   > *:not(:first-child) {
     margin-left: 3vw;
+  }
+
+  > * {
+    cursor: pointer;
+
+    &:hover {
+      color: rgb(255, 52, 99);
+    }
   }
 }
 

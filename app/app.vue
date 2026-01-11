@@ -31,5 +31,6 @@
   h1 {
     margin: 0;
     font-weight: normal;
+    scroll-margin-top: calc(3vh * 2 + 3.5vw);
   }
 </style>

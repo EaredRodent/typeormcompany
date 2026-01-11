@@ -5,9 +5,9 @@
 <template>
   <div class="screen">
     <div class="container">
-      <div class="header">
+      <h1 id="contacts" class="header">
         Контакты
-      </div>
+      </h1>
       <div class="small-header">
         Для клиентов
       </div>
@@ -23,7 +23,7 @@
         <div>E-mail: <a :href="'mailto:hr@' + hostName">hr@{{hostName}}</a></div>
       </div>
 
-      <div class="trademark">© 2025 TypeORM Support. All rights reserved</div>
+      <div class="trademark">TypeORM Support</div>
     </div>
   </div>
 </template>
@@ -58,6 +58,7 @@
 .contacts {
   margin-top: 2vh;
   display: flex;
+  align-self: start;
 
   & > div:not(:first-child) {
     margin-left: 5vw;

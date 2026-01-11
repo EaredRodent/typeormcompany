@@ -24,7 +24,7 @@ const onSubmit = () => {
 <template>
   <div class="screen">
     <form id="orderForm" class="container" @submit.prevent="onSubmit">
-      <h1 class="header">
+      <h1 id="callUs" class="header">
         Свяжитесь с нами!
       </h1>
       <div class="about">
@@ -133,6 +133,7 @@ const onSubmit = () => {
 }
 
 label {
+  cursor: text;
   transition: transform .2s ease-out;
   opacity: 0.5;
 

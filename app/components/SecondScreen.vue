@@ -5,9 +5,9 @@
 <template>
 <div class="screen">
   <div class="container">
-    <div class="header">
+    <h1 id="facts" class="header">
       Факты и цифры
-    </div>
+    </h1>
     <div class="benefits">
       <div class="benefit">
         <div class="needle">
@@ -139,7 +139,7 @@
   display: flex;
   flex-flow: column;
   margin-top: 5vh;
-  max-width: 70vw;
+  max-width: 60vw;
 
   .needle {
     text-wrap: nowrap;
