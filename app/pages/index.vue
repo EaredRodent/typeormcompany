@@ -7,7 +7,7 @@ const canShow = ref(false)
 if (window?.document?.readyState === 'complete') {
   canShow.value = true
 } else {
-  window?.document?.addEventListener('DOMContentLoaded', () => {
+  window?.addEventListener('load', () => {
     canShow.value = true
   })
 }
