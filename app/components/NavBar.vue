@@ -29,9 +29,9 @@ const onTabClick = (id) => {
     TypeORM
   </div>
   <div class="nav-links">
-    <div @click="onTabClick('facts')">Выгода</div>
-    <div @click="onTabClick('callUs')">Заявка</div>
-    <div @click="onTabClick('contacts')">Контакты</div>
+    <div class="link" @click="onTabClick('facts')">Выгода</div>
+    <div class="link" @click="onTabClick('callUs')">Заявка</div>
+    <div class="link" @click="onTabClick('contacts')">Контакты</div>
   </div>
   <div class="send-order">
     <button type="submit" class="send-button" @click="onOrderClick">
@@ -77,11 +77,11 @@ const onTabClick = (id) => {
 .nav-links {
   display: flex;
 
-  > *:not(:first-child) {
+  .link:not(:first-child) {
     margin-left: 3vw;
   }
 
-  > * {
+  .link {
     cursor: pointer;
 
     &:hover {
